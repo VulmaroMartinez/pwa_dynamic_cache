@@ -1,0 +1,37 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+    padding: 0 10px;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+nav a.active {
+    background-color: #007bff;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos para que Select2 se vea bien */
+.select2-container .select2-selection--single {
+    height: 38px !important;
+    padding: 6px 0;
+}

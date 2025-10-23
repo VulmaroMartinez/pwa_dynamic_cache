@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-C">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA - Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./calendar.html">Calendario</a>
+        <a href="./form.html" class="active">Formulario</a>
+    </nav>
+    <main>
+        <h1>Formulario con Select2</h1>
+        
+        <form style="width: 100%; max-width: 500px; margin-top: 20px;">
+            <label for="mascota" style="display: block; margin-bottom: 8px;">Elige tu mascota favorita:</label>
+            <select class="mi-select" name="mascota" style="width: 100%;">
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+              <option value="pez">Pez</option>
+              <option value="hamster">Hámster</option>
+              <option value="conejo">Conejo</option>
+            </select>
+        </form>
+
+        <form style="width: 100%; max-width: 500px; margin-top: 20px;">
+            <label for="mascota" style="display: block; margin-bottom: 8px;">Elige tu fruta favorita:</label>
+            <select class="mi-select" name="mascota" style="width: 100%;">
+              <option value="Manzana">Fresa</option>
+              <option value="Mango">Uva</option>
+              <option value="Fresa">Manzana</option>
+              <option value="Piña">Mango</option>
+              <option value="Uva">Piña</option>
+            </select>
+        </form>
+        <form style="width: 100%; max-width: 500px; margin-top: 20px;">
+            <label for="mascota" style="display: block; margin-bottom: 8px;">Elige tu comida favorita:</label>
+            <select class="mi-select" name="mascota" style="width: 100%;">
+              <option value="Pizzas">Pizzas</option>
+              <option value="Hamburguesas">Hamburguesas</option>
+              <option value="Quesadillas">Quesadillas</option>
+              <option value="Ensaladas">Ensaladas</option>
+              <option value="Pastas">Pastas</option>
+            </select>
+        </form>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.mi-select').select2();
+        });
+    </script>
+
+    <script src="./main.js"></script>
+</body>
+</html>
